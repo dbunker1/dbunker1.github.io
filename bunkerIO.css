@@ -1,11 +1,11 @@
 body {
-	background-color: black;
+	background-color: white;
         background-image: url(backleft.gif);
         background-repeat: repeat-y;
 	margin-left: 26px;
 	margin-right: 0px;
         margin-top: 0px;
 	font-family: "Monospaced";
-	color: blue
+	
 }
 
