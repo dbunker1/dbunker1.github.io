@@ -5,7 +5,12 @@ body {
 	margin-left: 26px;
 	margin-right: 0px;
         margin-top: 0px;
-	font-family: "Monospaced";
-	
-}
+	font-family: "Courier new, Courier, monospace";
 
+}
+pre{
+    font-size: 200px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+
+}
