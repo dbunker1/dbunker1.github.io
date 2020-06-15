@@ -5,12 +5,16 @@ body {
 	margin-left: 26px;
 	margin-right: 0px;
         margin-top: 0px;
-	font-family: "Courier new, Courier, monospace";
+	font-family: 'Courier new', Courier, monospace;
+
 
 }
+#table2{
+	font-size: 100%;
+	font-family: 'Courier New', Courier, monospace;
+}
 pre{
-    font-size: 200px;
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-
+	text-align: left;
+    font-size: 100%;
+	font-family: 'Courier New', Courier, monospace;
 }
