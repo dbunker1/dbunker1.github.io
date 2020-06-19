@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Countdown Timer</title>
+
+
+<!-- 
+A simple timer to show start/stop.
+
+-Michael Weeks, February 2013 
+
+TODO:
+  Play a noise when done?
+  Have it countdown?
+  Change the color of the background?
+
+-->
+
+<script>
+var STARTTIME = 300000;  // equivalent to 5:00
+var INTERVAL = 1000;
+var myTime = new Date();
+var currentTime = myTime.getTime();
+var clockStarted = false;
+var elapsedTime = STARTTIME;
+var oldElapsedTime = STARTTIME;
+var startTime = 0;
+var endTime = 0;
+var milliseconds2hours = 60 * 60 * 1000;
+var milliseconds2minutes = 60 * 1000;
+
+
+// As the "onload" function, this ensures the maze is shown.
+function initialize() {
+
+  // Set up interval
+  // Next line is from http://www.w3schools.com/jsref/met_win_setinterval.asp
+  var int = self.setInterval("Tick()", INTERVAL);
+
+}
+
+//
+// When the user enters a new time, call the reset function.
+//
+function newTime() {
+  // var newtime = document.getElementById("START").value;
+  // console.log('New start time entered. ' + newtime);
+  ResetClock();
+}
+</script>
+
+</head>
+<!-- make the background color green -->
+<body onload="initialize()" bgcolor="black" text></body>
+
+<center>
+<p style="font-size:16px">
+Countdown Timer
+</p>
+<input type="text" id="START" name="START" onchange="newTime()" value="5:00" />
+
+
+<font face="monospace" color="white">
+<p style="font-size:100px" id="status"></p>
+</font>
+
+<script type="application/javascript">
+function Tick() {
+
+  myTime = new Date();
+  currentTime = myTime.getTime();
+
+  if (clockStarted) 
+    elapsedTime = oldElapsedTime - currentTime + startTime;
+
+  // convert milliseconds to hours, minutes, seconds
+  var hour = Math.floor(elapsedTime / milliseconds2hours); 
+  // How many milliseconds are left after we take out the hours?
+  var msLeft = elapsedTime - hour * milliseconds2hours;
+  var min = Math.floor(msLeft / milliseconds2minutes);
+  msLeft = msLeft - min * milliseconds2minutes;
+  var sec = Math.floor(msLeft / 1000); 
+
+  if (hour > 0) {
+    // document.getElementById("status").innerHTML = elapsedTime + ' ms, or ' + 
+    //   hour + ':' + min + ':' + sec;
+    document.getElementById("status").innerHTML = hour + ':' + min + ':' + sec;
+  }
+  else {
+    // document.getElementById("status").innerHTML = elapsedTime + ' ms, or ' + 
+    //   min + ':' + sec;
+    document.getElementById("status").innerHTML = min + ':' + sec;
+  }
+
+  if ((hour == 0) && (min == 0)) {
+    if (sec == 0) {
+      // stop the clock
+      StopClock();
+      // make the background color red
+      document.bgColor = "#f60000";
+      // make the text color white
+      // TODO: this does not work at the moment.
+      document.text = "#ffffff";
+      // play a sound?
+    } 
+  }
+}
+
+
+// 
+// Reset the clock's value to whatever the user chose.
+// Also, change the screen color back to green.
+//
+function ResetClock() {
+  var startStr = document.getElementById("START").value;
+  var parts = startStr.split(':');
+  if (parts.length == 3) {
+    // Get hours, min, sec 
+    STARTTIME = Number(parts[0]) * 3600000 + Number(parts[1]) * 60000 + 
+      Number(parts[2]) * 1000;
+      // alert('parts are ' + parts[0] + ' and ' + parts[1] + ' and ' 
+      //   + parts[2] + ' and start is ' + STARTTIME);
+  } else if (parts.length == 2) {
+    // Get min, sec 
+    STARTTIME = Number(parts[0]) * 60000 + Number(parts[1]) * 1000;
+    // alert('parts are ' + parts[0] + ' and ' + parts[1] 
+    //   + ' and start is ' + STARTTIME);
+  } else if (parts.length == 1) {
+    // Get sec 
+    STARTTIME = Number(parts[0]) * 1000;
+    // alert('parts are ' + parts[0] + ' and start is ' + STARTTIME);
+  }
+
+  elapsedTime = STARTTIME;
+  oldElapsedTime = STARTTIME;
+  myTime = new Date();
+  startTime = myTime.getTime();
+
+  // make the text color white
+  document.text = "#ffffff";
+  // make the background color green 
+  
+}
+
+function StartClock() {
+  myTime = new Date();
+  startTime = myTime.getTime();
+  clockStarted = true; 
+}
+
+function StopClock() {
+  myTime = new Date();
+  endTime = myTime.getTime();
+  oldElapsedTime = elapsedTime;
+  clockStarted = false; 
+}
+
+
+  document.write('<button onclick="StartClock();">Start</button>');
+  document.write('<button onclick="StopClock();">Stop</button>');
+  document.write('<button onclick="ResetClock();">Reset</button>');
+
+</script>
+</center>
+
+
+</body></html>
