@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--It seemed really ineffeicent to create a seperate file 
+for each example so I created them on the same page. -->
+<html>
+    <head>
+        <title>HTML Table Design</title>
+        <style>
+            table,th,td{border:1px solid black;}
+            #ex4{border:1px solid black; font-family: Comic Sans MS;}
+        </style>
+    </head>
+
+    <body>
+        <table style="width:80%">
+            <tr>
+                <td width=25% height=20 bgcolor="darkred">red cell</td>
+                <td height=20 bgcolor="lightblue">light blue cell</td>
+            </tr>
+        </table>
+        <br><hr>
+
+        <table style="width:80%" align=center>
+            <tr align="center">
+                <td width=25% height=40 bgcolor="darkred">red cell</td>
+                <td height=40 bgcolor="lightblue">light blue cell</td>
+            </tr>
+        </table>
+        <br><hr>
+
+        <table style="width:80%" align=center id=ex4>
+            <tr align="center">
+                <td width=25% height=40 bgcolor="darkred">red cell</td>
+                <td height=40 bgcolor="lightblue">light blue cell</td>
+            </tr>
+        </table>
+        <br><hr>
+
+        <table style="width:80%" align=center >
+            <caption>Tabling</caption>
+            <tr align="center">
+                <td width=25% height=70 bgcolor="red">
+                    <p style = "font-family: verdana">red cell</p>
+                </td>
+                <td width=75% bgcolor="lightblue">
+                    <p style="font-family: Comic Sans MS;">light blue cell</p>
+                </td>
+            </tr>
+        </table>
+        <br><hr>
+        <table style="width: 80%;" align="center">
+            <caption>CSC4370/6370 timetable</caption>
+            <tr>
+                <td width=50></td>
+                <th width = 150>Monday</th>
+                <th width = 150>Tuesday</th>
+                <th width = 150>Wednesday</th>
+                <th width = 150>Thursday</th>
+                <th width = 150>Friday</th>
+            </tr>
+            <tr>
+                <td>6-7pm</td>
+                <td>Look at website</td>
+                <td>free</td>
+                <td>Implementation</td>
+                <td>free</td>
+                <td>free</td>
+            </tr>
+            <tr>
+                <td>7-8pm</td>
+                <td>Take some notes</td>
+                <td>free</td>
+                <td>Implementation</td>
+                <td>free</td>
+                <td>free</td>
+            </tr>
+        </table>
+    </body>
+</html>
