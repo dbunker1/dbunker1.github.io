@@ -1,0 +1,98 @@
+body
+{
+    background-color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+h1{
+    text-align: center;
+    background-size: contain;
+    background-image: url("IMG_2115.jpg");
+    width: auto;
+    height: 140px;
+    
+}
+.nv1
+{
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+section
+{
+    float: left;
+    width: 1000px;
+}
+table
+{
+    border: 2xp solid black;
+    margin: 10px;
+    width: 1000px;
+
+}
+aside
+{
+    width: 200px;
+    float: right;
+    text-align: center;
+}
+#ext
+{
+    float: right;
+    color: red;
+    font-weight: bold;
+}
+#pic
+{
+    float: right;
+    width: 250px;
+    height: 360px;
+}
+.tab2, td,th
+{
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+tr:nth-child(even) {background-color: lightblue;}
+.res
+{
+  margin: auto;
+  width: 800px;
+  border: 3px solid green;
+  font-family: 'Courier New', Courier, monospace;
+}
+.p1
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.foot
+{
+    text-align: center;
+    width: 1000px;
+}
+.button
+{
+    background-color: blue; 
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.button:hover
+{
+    background-color: green;
+}
+#words
+{
+    color: red;
+    font-weight: bold;
+}
