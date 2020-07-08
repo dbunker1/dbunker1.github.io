@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--All code for this assignment is heavily based on old 
+    Java programs that I have from my CSC 1302 days-->
+<html>
+    <head>
+        <title>Intro to JS</title>
+    </head>
+    <body>
+        <script>
+            var n = prompt("Enter a number for Fibonacci",1); //Promts the user
+            var x =0;
+            var y = 1;
+            if( n == 1)
+            {
+                document.write(0,1);
+            }
+            else{
+                document.write(0 + " ");
+                for(i=1; i<=n;i++)
+                {
+                    document.write(y + " ");
+                    var z = x + y;
+                    x=y;
+                    y=z;
+                }
+            }
+        </script>
+        <br><hr>
+        <script>
+            var n = prompt("How many rows of stars?",1);
+            if(n == 1)
+            {
+                document.write("*");
+            }
+            else{
+                for(i=0;i<=n;i++)
+                {
+                    for(j=0;j<=i;j++)
+                    {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+            }
+        </script>
+        <br><hr>
+        <script>
+            var m1 = [[5,6,7], 
+                      [9,3,5],
+                      [5,7,8]];
+
+            var m2 = [[2,7,2], 
+                      [4,8,1],
+                      [9,8,7]];
+
+           var newM = new Array(3);
+           //Generates the new Array values 
+           for(i=0;i<3;i++)
+           {
+               newM[i] = new Array(3);
+               for(j=0;j<3;j++)
+               {
+                   newM[i][j] = 0;
+                   for(k=0;k<3;k++)
+                   {
+                       newM[i][j] += m1[i][k] * m2[k][j];
+                   }
+               }
+           }
+           console.log(newM); // tests for corectness
+           //displays the matrix on screen. 
+           for(x=0;x<3;x++)
+           {
+               for(y=0;y<3;y++)
+               {
+                   document.write(newM[x][y]+ " ")
+               }
+               document.write("<br>")
+           }
+        </script>
+        <br><hr>
+        
+        <script>
+            var str = prompt("Enter a word (no spaces or all lowercase)","racecar");
+            var len = str.length
+            for(i =0; i < len/2; i++)
+            {
+                if(str[i] !== str[len-1-i])
+                {
+                    document.write("False");
+                }
+            }
+            
+            document.write("True, it is a palindrome!");
+        </script>
+    </body>
+
+</html>
