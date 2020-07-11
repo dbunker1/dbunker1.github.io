@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity 1</title>
+        <link href="cw7.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id =navi>
+            <a class="button" href="/WP/CW/cw7/activity1.html #ac1">Activity 1</a>
+            <a class="button" href="/WP/CW/cw7/activity1.html #act2">Activity 2</a>
+            <a class="button" href="/WP/CW/cw7/activity1.html #ac3">Activity 3</a>
+            <a class="button" href="/WP/CW/cw7/activity1.html #act4">Activity 4</a>
+            <a class="button" href="/WP/CW/cw7/activity1.html #act5">Activity 5</a>
+            <a class="button" href="/WP/CW/cw7/activity1.html #act6">Activity 6</a>
+            <a class="button" href="/WP/CW/cw7/activity1.html #act7">Activity 7</a>
+        </nav>
+        <h2 id=act1>Activity One</h3><hr>
+        <form method="POST" action="mailto:djbunker96@gmail.com">
+            Please input your name: <input type="text" size="40" maxlength="30"><br>
+            Name: <input type="text" NAME="name" size="35" value="---please type here---">
+        </form>
+        <br><hr>
+
+        <h2 id=act2>Activity Two</h3><hr>
+        <form method="POST" action="mailto:djbunker96@gmail.com">
+            Name: <input type="text" NAME="name" size="35"><br>
+            Email: <input type="text" NAME="email" size="40"><br>
+            Address 1: <input type="text" NAME="add1" size="40"><br>
+            Address 2: <input type="text" NAME="add2" size="40"><br>
+            Address 3: <input type="text" NAME="add3" size="40"><br>
+            Postcode: <input type="text" NAME="postcode" size="5">
+        </form>
+        <br><hr>
+
+        <h2 id=ac3>Activity 3</h2><hr>
+        <form method="POST" action="mailto:djbunker96@gmail.com">
+            <table id = act3>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" NAME="name" size="35" value="your name here"></td>
+            </tr>
+            <tr>
+                <td>Email:</td> 
+                <td><input type="text" NAME="email" size="40" value="your email here"></td>
+            </tr>
+            <tr>
+                <td>Address 1:</td> 
+                <td><textarea rows="5" cols="50" name="address">
+124 Conch Street
+Bikini Bottom, Pacific Ocean 05051
+            </textarea>
+            </td>
+            </tr>
+            <tr>
+                <td>Postcode:</td>
+                <td><input type="text" NAME="postcode" size="10" value="postal code"></td>
+            </tr>
+            </table>
+        </form>
+       <br><hr>
+
+       <h2 id=act4>Activity 4</h2><hr>
+       <form method="GET" action="">
+        <table id="act3">
+            <tr>
+                <td>1. Do you like playing computer games?</td>
+                <td><input type="radio" name= q1 value="yes" >yes</td>
+                <td><input type="radio" name= q1 value="no">no</td>
+            </tr>
+            <tr>
+                <td>2. How much did you enjoy the 'Star Wars' Trilogy? </td>
+                <td><input type="radio" name= q2 value=" I enjoyed it" > I enjoyed it</td>
+                <td><input type="radio" name= q2 value="I did not enjoy it "> I did not enjoy it</td>
+                <td><input type="radio" name= q2 value=" I have not seen it "> I have not seen it </td>
+            </tr>
+            <tr>
+                <td>3. Do you have an email address?</td>
+                <td><input type="radio" name= q3 value="yes" >yes</td>
+                <td><input type="radio" name= q3 value="no">no</td>
+            </tr>
+            <tr>
+                <td>4. Chocolate is delicious.</td>
+                <td><input type="radio" name= q4 value="agree" >agree</td>
+                <td><input type="radio" name= q4 value="nuetral">nuetral</td>
+                <td><input type="radio" name= q4 value="disagree">disagree</td>
+                <td><input type="radio" name= q4 value="strongly disagree">strongly disagree</td>
+            </tr>
+            <tr>
+                <td>5. Why is the code broken?</td>
+                <td><input type="radio" name= q5 value="idk">I messed up</td>
+                <td><input type="radio" name= q5 value="cause">Its not me its the machine</td>
+            </tr>
+            <tr>
+                <td>6. I should've done this earlier </td>
+                <td><input type="radio" name= q6 value="yee">YES</td>
+                
+            </tr>
+            <tr>
+                <td>7. What is the meaning of life</td>
+                <td><input type="radio" name= q7 value="idk">42</td>
+                <td><input type="radio" name= q7 value="cause">Life is meaningless</td>
+            </tr>
+            <tr>
+                <td>8. Is your refrigerator running</td>
+                <td><input type="radio" name= q8 value="idk" onclick="alert('Then you better go catch it')">yes</td>
+                <td><input type="radio" name= q8 value="cause" onclick="alert('Oh no go plug it in')">No</td>
+            </tr>
+        </table>
+       </form>
+       <br><hr>
+       <h2 id=act5>Activity 5</h2>
+       <form>
+        <table id="act3">
+            <tr>
+                <td>1. Do you like playing computer games?</td>
+                <td><input type="checkbox"  value="yes" >yes</td>
+                <td><input type="checkbox"  value="no">no</td>
+            </tr>
+           
+            <tr>
+                <td>3. Do you have an email address?</td>
+                <td><input type="checkbox"  value="yes" >yes</td>
+                <td><input type="checkbox"  value="no">no</td>
+            </tr>
+            
+        </table>
+       </form>
+       <br><hr>
+       <h2 id=act6>Activity 6</h2>
+       <form>
+           
+           Title: <select name="title">
+               <option value="Mr.">Mr.</option>
+               <option value="Mrs.">Mrs.</option>
+               <option value="Miss.">Miss.</option>
+               <option value="Ms.">Ms.</option>
+               <option value="Dr.">Dr.</option>
+           </select>
+           <br>
+           Gender: <select name="gender">
+               <option value="male">Male</option>
+               <option value="Fem">Female</option>
+           </select>
+           <br>
+           Status: <select name="stat">
+               <option value="em">Employed</option>
+               <option value="un">UnEmployed</option>
+               <option value="std">Student</option>
+           </select>
+           <br>
+           Day
+            <select name="Day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            Month
+            <select name="Month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+
+
+            </select>
+
+            Year
+            <select name="Year">
+                <option value="1960">1960</option>
+                <option value="1961">1961</option>
+                <option value="1962">1962</option>
+                <option value="1963">1963</option>
+                <option value="1964">1964</option>
+                <option value="1965">1965</option>
+
+            </select>
+       </form>
+       <br><hr>
+       <h2 id=act7>Activity 7</h2>
+       <form method="POST" action="mailto:djbunker96@gmail.com" enctype="text/plain">
+            We only use fresh ingriedents and some pizza toppings may not be available.<br>
+            We will supply three from your list.<br>
+            Please list preferred toppings in order.<br>
+            <textarea rows="10" cols="30">
+
+            </textarea><br>
+            Pizza Size:<br>
+            <input type="radio" name="size" value="small">Small<br>
+            <input type="radio" name="size" value="med">Medium<br>
+            <input type="radio" name="size" value="lg">Large<br>
+            <input type="submit">
+            <input type="reset">
+       </form>
+    </body>
+</html>
