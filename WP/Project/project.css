@@ -1,0 +1,17 @@
+@import url("https://use.typekit.net/maf6cqr.css");
+@import url("https://use.typekit.net/maf6cqr.css");
+body
+{
+
+}
+#head 
+{
+    text-align: center;
+    font-family: sofia-pro,sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 40px;
+    width: auto;
+    height: 200px;
+}
+

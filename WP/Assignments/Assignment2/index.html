@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--I unfortunatlly ran out of time to finsih this assignment :( 
+    I will do better next time.-->
+<html>
+    <head>
+        <title>JS Assignment 2</title>
+        <script src="hw2.js"></script>
+    </head>
+    <body>
+        <h1>Say Hello to yourself</h1>
+        <form name="myForm" method="POST" onsubmit="sayHello()">
+            Name: <input type="text" name=fname>
+            <input type="submit" value="Submit">
+        </form>
+        <br><hr>
+
+        <h1>A very simple calculator</h1>
+        <form name="calcFomr" method="POST" onsubmit="simpCalc()">
+            Number 1: <input type="text" name=fnum><br>
+            Number 2: <input type="text" name=fnum1><br>
+            Result : <input type="text" name=result><br>
+            <input type="button" value="Add" onclick="add()">
+            <input type="button" value="Sub" onclick="sub()">
+            <input type="button" value="Mult" onclick="mult()">
+            <input type="button" value="Quot" onclick="div()">
+        </form>
+        <br><hr>
+        <h1>A simple virtual keyboard</h1>
+        <form name="keys" method="POST">
+            <input type="button" id =1 name="1" value="a" onclick="strings('1')">
+            <input type="button" name="2" value="b" onclick="strings()">
+            <input type="button" name="3" value="c" onclick="strings()">
+            <input type="button" name="4" value="d" onclick="strings()">
+            <input type="button" name="5" value="e" onclick="strings()">
+            <input type="button" name="6" value="f" onclick="strings()">
+            <input type="button" name="7" value="g" onclick="strings()">
+            <input type="button" name="0" value="space" onclick="strings()"><br>
+            <input type="text" name="str">
+        </form>
+        <br><hr>
+        <h1>Check Out Cart</h1>
+        <form name="cart" method="POST">
+            <input type="checkbox" id=cart name="cart">Milk <br>
+            <input type="checkbox" id=cart name="cart">Bread <br>
+            <input type="checkbox" id=cart name="cart">Soda <br>
+            <input type="checkbox" id=cart name="cart">Eggs <br>
+            <input type="checkbox" id=cart name="cart">Pasta <br>
+            <input type="button" value="Checkout" onclick="cart()">
+        </form>
+        <br><hr>
+        <h1>Exercise 5</h1>
+        <script src="hw2.js">makeTable();</script>
+        <br><hr>
+        <h1>Log In</h1>
+        <form name="auth" method="POST">
+            Username: <input type="text" name="usr"><br>
+            Password: <input type="text" name="pwd"><br>
+            <input type="submit" value="login">
+        </form>
+    </body>
+    
+</html>
