@@ -1,0 +1,23 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+form{
+    display: inline-block;
+}
+.select
+{
+    padding:10px;
+    margin:10px;
+    
+    
+}
+      
+.button
+{
+    background-color:red;
+    color:white;
+    cursor:pointer;
+    
+}

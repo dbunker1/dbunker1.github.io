@@ -1,17 +1,183 @@
-@import url("https://use.typekit.net/maf6cqr.css");
-@import url("https://use.typekit.net/maf6cqr.css");
-body
-{
-
-}
-#head 
-{
-    text-align: center;
-    font-family: sofia-pro,sans-serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 40px;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #002259;
+    background-image:url("backgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  
+  header{
     width: auto;
-    height: 200px;
-}
-
+    height: auto;
+    height: 70px;
+    background-color: #000133
+  
+  }
+  
+  header > h1 {
+    padding: 3px;
+    float: left;
+    margin-top:11px;
+    margin-left: 2%;
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #E5B06B
+  
+  }
+  
+  header > h1 > span{
+    color: #FFFFFF;
+  }
+  
+  header > nav > ul {
+    width: auto;
+    float: right;
+    margin-top: 10px;
+  
+  }
+  
+  header > nav > ul > li {
+    display: inline-block;
+    padding: 15px 30px;
+  
+  }
+  
+  header > nav > ul > li > a {
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF
+  }
+  
+  header > nav > ul > li > a:hover {
+    color: #F0C330;
+    transition: 0.2s;
+  }
+  
+  input[type=text], select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #E5B06B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* Position text in the middle of the page/image */
+  .mainPageView {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-family: 'ZCOOL XiaoWei', serif;
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+  }
+  
+  .button {
+    background-color: #E5B06B;
+    color:white;
+    border-radius: 12px;
+    border: 2px solid #D8A663;
+    width: 75px;
+    height: 25px;
+  }
+  
+  .button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: 0.4s;
+  }
+  
+  body > .loginPopUp {
+  
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  
+  .loginPopUp > .loginPopUpBox {
+    width: 500px;
+    height: 300px;
+    background-color: #9FBFF2;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-family: 'ZCOOL XiaoWei', serif;
+  }
+  
+  
+  .loginPopUp > .loginPopUpBox > .close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  
+  
+  
+  body > .signUpPopUp {
+  
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signUpPopUp> .signUpPopUpBox {
+    width: 500px;
+    height: 625px;
+    background-color: #9FBFF2;
+    text-align: center;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    font-family: 'ZCOOL XiaoWei', serif;
+  }
+  
+  .signUpPopUp> .signUpPopUpBox > form > a {
+    text-decoration: none;
+    color: BLACK;
+  }
+  
+  .signUpPopUp> .signUpPopUpBox > form > a:hover {
+    color: #F0C330;
+    transition: 0.2s;
+  }
+  
+  .signUpPopUp> .signUpPopUpBox > .close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  
+  input {
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+  }
+  

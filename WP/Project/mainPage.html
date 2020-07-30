@@ -5,7 +5,79 @@
         <link rel="stylesheet" href="https://use.typekit.net/maf6cqr.css">
         <link rel="stylesheet" href="project.css">
     </head>
-    <body>
-        <header id=head>Welcome to Global Flavors</header>
-    </body>
+    <header>
+        <h1>Global<span>Flavors</span></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Americas</a></li>
+            <li><a href="">Asia</a></li>
+            <li><a href="">European</a></li>
+  
+          </ul>
+        </nav>
+      </header>
+  
+      <body>
+  
+        <div class="hero"></div>
+        <div class="mainPageView">
+          <h1><b>Welcome to Global Flavors!</b><h1>
+          <div class="mainPageBtns">
+            <button type="button" id="loginButton" class="button">LOGIN</button>
+            <button type="button" id="signupButton" class="button">SIGNUP</button>
+          </div>
+        </div>
+  
+  
+  
+  
+        <div class="loginPopUp" id="loginPopUpID">
+          <div class="loginPopUpBox">
+            <div class="close" id="closeLoginButton">&times;</div>
+            <form action="login.php" method="post">
+              <div class="loginHeader"><b>LOGIN</b></div>
+              <div class="loginInputs">
+                <input type="text" id="usernameinputid" placeholder="Username" name="usernameinput" required>
+                <input type="text" id="passwordid" placeholder="Password" name="pass" required>
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+  
+        <div class="signUpPopUp" id="signUpPopUpID">
+          <div class="signUpPopUpBox">
+            <div class="close" id="closeSignupButton">&times;</div>
+             <form action="siregistration.php" method="post">
+              <div class="signupHeader"><b>SIGN UP</b></div>
+              <input type="text" placeholder="First Name" name="firstname" required>
+              <input type="text" placeholder="Last Name" name="lastname" required>
+              <input type="text" placeholder="Email Address" name="email" required >
+              <input type="text" placeholder="Password" name="password" required>
+              <input type="text" placeholder="Confirm Password" >
+              <input type="text" placeholder="Street Address" name"streetaddress" required>
+              <input type="text" placeholder="City" name="city" required>
+              <select name="State" required>
+                <option selected="selected">State</option>
+                <option> AL</option><option> AK</option><option> AZ</option><option> AR</option><option> CA</option>
+                <option> CO</option><option> CT</option><option> DE</option><option> FL</option><option> GA</option>
+                <option> HI</option><option> ID</option><option> IL</option><option> IN</option><option> IA</option>
+                <option> KS</option><option> KY</option><option> LA</option><option> ME</option><option> MD</option>
+                <option> MA</option><option> MI</option><option> MN</option><option> MS</option><option> MO</option>
+                <option> MT</option><option> NE</option><option> NV</option><option> NH</option><option> NJ</option>
+                <option> NM</option><option> NY</option><option> NC</option><option> ND</option><option> OH</option>
+                <option> OK</option><option> OR</option><option> PA</option><option> RI</option><option> SC</option>
+                <option> SD</option><option> TN</option><option> TX</option><option> UT</option><option> VT</option>
+                <option> VA</option><option> WA</option><option> WV</option><option> WI</option><option> WY</option>
+              </select></p>
+  
+              <input type="text" placeholder="Zipcode" name="zipcode" required>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        <script type="text/javascript" src="homeScripts.js"></script>
+      </body>
+  
 </html>
