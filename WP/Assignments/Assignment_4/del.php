@@ -2,13 +2,10 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "College";
+    $dbname = "db";
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-    if (!$conn) 
-    {
-        die("Connection failed: " . mysqli_connect_error());
-    }
+   
 
     $sql = "delete from addressbook where Firstname='$_POST[fname]'";
     if (mysqli_query($conn, $sql)) 
