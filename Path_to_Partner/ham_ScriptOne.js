@@ -254,7 +254,7 @@
     player.width  = 60;
     player.height = 96;
     player.speed  = 6;
-    player.sheet  = new SpriteSheet('imgs/normal_walk.png', player.width, player.height);
+    player.sheet  = new SpriteSheet('imgs/sprite_0.png', player.width, player.height);
     player.anim   = new Animation(player.sheet, 4, 0, 15);
 
     // create the ground tiles
