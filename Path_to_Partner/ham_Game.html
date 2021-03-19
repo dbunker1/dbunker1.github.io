@@ -30,6 +30,54 @@
             </div>
             <canvas id="theCanvas" tabindex="1" width="850" height="640"></canvas>
         </center>
-        
+        <script>
+
+            function draw(){
+            var canvas = document.getElementById("theCanvas");
+            var ctx = canvas.getContext("2d");
+            
+            ctx.beginPath();
+            ctx.fillStyle = "grey";
+            ctx.fillRect(0,0,300,300);
+            ctx.fillRect(0,0,300,300);
+            ctx.closePath();
+            
+            
+            
+            
+            //Draw Square
+            ctx.fillStyle = "red";
+            ctx.fillRect(x,y,20,20);
+            //Two extra green squares
+            ctx.fillStyle = "green";
+            ctx.fillRect(x2,50,20,20);
+            ctx.fillRect(x3,50,20,20);
+            //make them move backwards at the same speed
+            x2 -= dx/4;
+            x3 -= dx/4;
+            
+            }
+            
+            var x = 20;
+            var y = 20;
+            var dx = 5;
+            var dy = 5;
+            //X coordinates for green blocks:
+            var x2 = 50;
+            var x3 = 250;
+            
+            
+            
+            setInterval(draw,10);
+            
+            document.addEventListener("keydown", keyDownHandler, false);
+            //document.addEventListener("keyup", keyUpHandler, false);
+            function keyDownHandler(e) {
+                if(e.keyCode == 39) {
+                    x+=dx;
+                }
+                }
+            
+            </script>
     </body>
 </html>
