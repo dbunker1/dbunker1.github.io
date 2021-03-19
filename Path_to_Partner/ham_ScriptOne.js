@@ -13,12 +13,12 @@
   var assetLoader = (function() {
     // images dictionary
     this.imgs        = {
-      'bg'            : 'imgs/bg.png',
-      'sky'           : 'imgs/sky.png',
-      'backdrop'      : 'imgs/backdrop.png',
-      'backdrop2'     : 'imgs/backdrop_ground.png',
-      'grass'         : 'imgs/grass.png',
-      'avatar_normal' : 'imgs/normal_walk.png'
+      'bg'            : 'bkg.png',
+     // 'sky'           : 'sky.png',
+     // 'backdrop'      : 'backdrop.png',
+     // 'backdrop2'     : 'backdrop_ground.png',
+     // 'grass'         : 'grass.png',
+      'avatar_normal' : 'sprite_0.png'
     };
 
     var assetsLoaded = 0;                                // how many assets have been loaded
