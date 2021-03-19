@@ -3,7 +3,7 @@ body {
     font-size: 16px;
   }
   
-  .splashscreen {
+  .wrapper {
     width: 600px;
     height: 360px;
     -webkit-box-sizing: border-box;
