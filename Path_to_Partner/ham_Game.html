@@ -34,6 +34,33 @@
             <canvas id="canvas" tabindex="1" width="850" height="640"></canvas>
             
         </center>
-        
+        <script type="application/javascript">
+            //
+            // Set up a function to handle key-presses.
+            //
+            // This should work across most browsers.
+            document['onkeydown'] = function(event) {
+              event = event || window.event;
+              var key = event.which || event.cursor;
+              // Check for a special key value, and map it to ASCII.
+              switch (key) {
+                case 37:  // Left arrow, ASCII 29 
+                  key = 29;
+                  break;
+                case 38:  // Up arrow, ASCII 30
+                  key = 30;
+                  break;
+                case 39:  // Right arrow, ASCII 28  
+                  key = 28;
+                  break; 
+                case 40:  // Down arrow, ASCII 31
+                  key = 31;
+                  break;
+              }
+              //document.getElementById("keydown").innerHTML =
+              //  " key Down event, keycode " + key;
+              whenKeyPressed(key);
+            };
+          </script>
     </body>
 </html>
