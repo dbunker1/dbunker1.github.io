@@ -35,11 +35,11 @@ var squareHeight = 10;
 var SpriteImage = new Image();   // Sprite sheet
 SpriteImage.src   = "sprite_0.png";
 
-var blueImage = new Image();   // Sprite sheet
-blueImage.src   = "bluesquare.png";
+//var blueImage = new Image();   // Sprite sheet
+//blueImage.src   = "bluesquare.png";
 
-var featureImage = new Image();   // feature sheet
-featureImage.src   = "features.png";
+//var featureImage = new Image();   // feature sheet
+//featureImage.src   = "features.png";
 
 
 // Set up a timer to execute every 50 ms.
